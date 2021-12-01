@@ -1,0 +1,1 @@
+add assets like sprite in this folder
