@@ -1,0 +1,142 @@
+name: "prison_meeting_room"
+scale_along_z: 0
+embedded_instances {
+  id: "background"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"wall\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 5.0\n"
+  "    y: 11.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -61.0
+    y: 139.0
+    z: -10.0
+  }
+  rotation {
+    x: -0.014920846
+    y: 0.0
+    z: 0.0
+    w: 0.99988866
+  }
+  scale3 {
+    x: 1.251
+    y: 1.277
+    z: 1.059
+  }
+}
+embedded_instances {
+  id: "player"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "midbackground"
+  data: "embedded_components {\n"
+  "  id: \"chair1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"chair1\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -178.709\n"
+  "    y: -116.199\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.16310014\n"
+  "    y: 0.07576135\n"
+  "    z: -0.009600103\n"
+  "    w: 0.98364955\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"chair2\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"chair2\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 178.967\n"
+  "    y: -111.321\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"table\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"table\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 11.0\n"
+  "    y: -72.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -84.0
+    y: -144.0
+    z: -5.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
