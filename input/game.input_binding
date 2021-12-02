@@ -1,4 +1,16 @@
-mouse_trigger {
-  input: MOUSE_BUTTON_1
-  action: "touch"
+key_trigger {
+  input: KEY_RIGHT
+  action: "MOVE_RIGHT"
+}
+key_trigger {
+  input: KEY_LEFT
+  action: "MOVE_LEFT"
+}
+gamepad_trigger {
+  input: GAMEPAD_LPAD_LEFT
+  action: "MOVE_LEFT"
+}
+gamepad_trigger {
+  input: GAMEPAD_LPAD_RIGHT
+  action: "MOVE_RIGHT"
 }
