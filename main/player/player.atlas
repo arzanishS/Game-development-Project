@@ -1,3 +1,11 @@
+images {
+  image: "/assets/Players/Arsen_friend/arsen_friend_walk.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/Players/ArseneLupin/Arsen_stand.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 animations {
   id: "run"
   images {

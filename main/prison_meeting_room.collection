@@ -1,48 +1,7 @@
-name: "prison_meeting_room"
-scale_along_z: 0
-embedded_instances {
-  id: "background"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
-  "default_animation: \\\"wall\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 5.0\n"
-  "    y: 11.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: -61.0
-    y: 139.0
-    z: -10.0
-  }
-  rotation {
-    x: -0.014920846
-    y: 0.0
-    z: 0.0
-    w: 0.99988866
-  }
-  scale3 {
-    x: 1.251
-    y: 1.277
-    z: 1.059
-  }
-}
-embedded_instances {
-  id: "player"
-  data: ""
+name: "default"
+instances {
+  id: "camera"
+  prototype: "/rendercam/camera.go"
   position {
     x: 0.0
     y: 0.0
@@ -54,65 +13,54 @@ embedded_instances {
     z: 0.0
     w: 1.0
   }
+  component_properties {
+    id: "script"
+    properties {
+      id: "nearZ"
+      value: "-20.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "farZ"
+      value: "20.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "useViewArea"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+    properties {
+      id: "viewArea"
+      value: "720.0, 540.0, 0.0"
+      type: PROPERTY_TYPE_VECTOR3
+    }
+    properties {
+      id: "expandView"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+  }
   scale3 {
-    x: 1.0
-    y: 1.0
+    x: 1.28
+    y: 1.346
     z: 1.0
   }
 }
+scale_along_z: 0
 embedded_instances {
-  id: "midbackground"
+  id: "background"
   data: "embedded_components {\n"
-  "  id: \"chair1\"\n"
+  "  id: \"wall\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
-  "default_animation: \\\"chair1\\\"\\n"
+  "default_animation: \\\"wall\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: -178.709\n"
-  "    y: -116.199\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.16310014\n"
-  "    y: 0.07576135\n"
-  "    z: -0.009600103\n"
-  "    w: 0.98364955\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"chair2\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
-  "default_animation: \\\"chair2\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 178.967\n"
-  "    y: -111.321\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"table\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
-  "default_animation: \\\"table\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 11.0\n"
-  "    y: -72.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -124,9 +72,257 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -84.0
-    y: -144.0
+    x: 13.0
+    y: 3.0
+    z: -10.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.947
+    y: 1.442
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "table"
+  data: "embedded_components {\n"
+  "  id: \"table\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"tableanschair\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: -5.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -53.0
+    y: -69.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.517
+    y: 0.395
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "window"
+  data: "embedded_components {\n"
+  "  id: \"window\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"window\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: -5.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -20.0
+    y: 90.0
+    z: -3.0
+  }
+  rotation {
+    x: -3.6312558E-4
+    y: -0.23479001
+    z: 0.0021538155
+    w: 0.97204363
+  }
+  scale3 {
+    x: -0.431
+    y: 0.338
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "door"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"door\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: -0.0013228795\n"
+  "    y: -0.18267311\n"
+  "    z: 0.005492378\n"
+  "    w: 0.98315746\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 309.0
+    y: 0.0
     z: -5.0
+  }
+  rotation {
+    x: 0.0012612158
+    y: 0.16407412
+    z: -0.0040408703
+    w: 0.98643893
+  }
+  scale3 {
+    x: 0.649
+    y: 0.674
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "player"
+  data: "components {\n"
+  "  id: \"meeting_room\"\n"
+  "  component: \"/main/script/prison_meeting_room.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"collectionfactory\"\n"
+  "  type: \"collectionfactory\"\n"
+  "  data: \"prototype: \\\"/main/player/player.collection\\\"\\n"
+  "load_dynamically: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -248.0
+    y: -40.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.902
+    y: 1.622
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "prisioner"
+  data: "embedded_components {\n"
+  "  id: \"prisioner\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter2/prison_meeting_room.atlas\\\"\\n"
+  "default_animation: \\\"prisoner\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 152.0
+    y: -31.0
+    z: -3.0
+  }
+  rotation {
+    x: 0.005461084
+    y: -0.989095
+    z: 0.0048144367
+    w: 0.14709914
+  }
+  scale3 {
+    x: 0.309
+    y: 0.359
+    z: 0.88
+  }
+}
+embedded_instances {
+  id: "controlScript"
+  data: "components {\n"
+  "  id: \"prison_meeting_room\"\n"
+  "  component: \"/main/script/prison_meeting_room.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
   }
   rotation {
     x: 0.0

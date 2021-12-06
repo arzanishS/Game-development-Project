@@ -2,3 +2,4 @@ function init(self)
 	collectionfactory.create('#collectionfactory')
 end
 
+
