@@ -30,7 +30,13 @@ end
 function update(self, dt)
 	-- Bounce the Character x position a minimum of 50 pixels off the side edges of the 
 	-- Game World; keeping the Game Object within a limited y range
+	if (go.get_position().x < -350) then
+		self.speed.x = 90
+	end
 
+	if (go.get_position().x > 350) then
+		self.speed.x = -90
+	end
 	-- Flip the sprite animation image when the x speed is negative
 	sprite.set_hflip("#arsenemove", self.speed.x < 0)
 
