@@ -21,7 +21,7 @@ embedded_instances {
   "  id: \"arsenemove\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/main/player/player.atlas\\\"\\n"
-  "default_animation: \\\"idle\\\"\\n"
+  "default_animation: \\\"Arsen_stand\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
