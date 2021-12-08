@@ -57,9 +57,9 @@ embedded_instances {
   id: "foreground"
   data: ""
   position {
-    x: 293.0
-    y: 119.0
-    z: 10.0
+    x: 296.0
+    y: 0.0
+    z: 5.0
   }
   rotation {
     x: 0.0
@@ -68,9 +68,9 @@ embedded_instances {
     w: 1.0
   }
   scale3 {
-    x: 1.929
-    y: 1.47
-    z: 1.04
+    x: 1.0
+    y: 1.0
+    z: 1.0E-6
   }
 }
 embedded_instances {
@@ -346,6 +346,26 @@ embedded_instances {
   "    y: 0.0\n"
   "    z: 0.0\n"
   "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"door\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/chapter1/arseneroom.atlas\\\"\\n"
+  "default_animation: \\\"door\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 594.059\n"
+  "    y: 229.357\n"
+  "    z: 2.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: -0.06677656\n"
+  "    z: 0.0\n"
+  "    w: 0.9977679\n"
   "  }\n"
   "}\n"
   ""
