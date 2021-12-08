@@ -1,9 +1,5 @@
 [bootstrap]
-<<<<<<< HEAD
-main_collection = /main/chapter4/fathers_friend_house.collectionc
-=======
 main_collection = /loader/loader.collectionc
->>>>>>> development
 render = /rendercam/rendercam.renderc
 
 [script]
