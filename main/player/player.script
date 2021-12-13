@@ -1,7 +1,7 @@
 -- Declare Local Variables
 local HASH_LEFT = hash("MOVE_LEFT")
 local HASH_RIGHT = hash("MOVE_RIGHT")
-
+local level = 1
 -- Declare Local Function which plays animation unless that same animation is already playing
 local function play_animation(self, animation)
 	if self.current_animation ~= animation then
@@ -36,6 +36,11 @@ function update(self, dt)
 
 	if (go.get_position().x > 350) then
 		self.speed.x = -90
+	end
+	if(level == 1) then
+		if (go.get_position().x > -100 ) then
+		msg.post("main:/dialouges#aresenroomdialougues", "msgbox1stdialougue")
+		end
 	end
 	-- Flip the sprite animation image when the x speed is negative
 	sprite.set_hflip("#arsenemove", self.speed.x < 0)
