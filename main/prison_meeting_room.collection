@@ -32,7 +32,7 @@ instances {
     }
     properties {
       id: "viewArea"
-      value: "720.0, 540.0, 0.0"
+      value: "730.0, 540.0, 0.0"
       type: PROPERTY_TYPE_VECTOR3
     }
     properties {
@@ -245,8 +245,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -248.0
-    y: -40.0
+    x: -234.0
+    y: -37.0
     z: 0.0
   }
   rotation {
@@ -256,8 +256,8 @@ embedded_instances {
     w: 1.0
   }
   scale3 {
-    x: 1.902
-    y: 1.622
+    x: 3.038
+    y: 2.33
     z: 1.0
   }
 }
